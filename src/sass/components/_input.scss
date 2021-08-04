@@ -1,0 +1,14 @@
+.br-input {
+  border-radius: 2px;
+  padding: 13px 15px;
+  border: none;
+  color: var(--color-text);
+  position: relative;
+
+  &:focus,
+  &:focus-within {
+    outline: 1px solid #2b94d2;
+    outline-offset: 3px;
+    outline-width: thin;
+  }
+}

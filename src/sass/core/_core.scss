@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  // outline-color: var(--color-three);
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: var(--color-text);
+  font-family: var(--font-family);
+
+  grid-template-columns: minmax(0, 1fr);
+}
+
+details > * {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+* List marker color.
+* Currently works in Firefox and Safari
+* ref: https://caniuse.com/#feat=css-marker-pseudo
+*/
+ul li::marker {
+  // color: var(--color-accent);
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: square;
+}
+
+/* font weights */
+
+.br-font-100 {
+  font-weight: 100;
+}
+
+.br-font-200 {
+  font-weight: 200;
+}
+
+.br-font-300 {
+  font-weight: 300;
+}
+
+.br-font-400,
+.br-font-normal {
+  font-weight: 400;
+}
+
+.br-font-500 {
+  font-weight: 500;
+}
+
+.br-font-600 {
+  font-weight: 600;
+}
+
+.br-font-700 {
+  font-weight: 700;
+}
+
+.br-font-800 {
+  font-weight: 800;
+}
+
+.br-font-900 {
+  font-weight: 900;
+}
+
+/* Layout for filter column and main content */
+
+.br-col-layout {
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.br-col-layout__sidebar {
+  flex-grow: 0;
+  @media (min-width: 992px) {
+    min-width: 200px;
+    margin-right: 40px;
+  }
+}
+
+.br-col-layout__main {
+  flex-grow: 1;
+}
+
+// Alpinejs helper
+[x-cloak] {
+  display: none !important;
+}
+
+.br-flow > * + * {
+  line-height: 1.5;
+  margin-top: var(--flow-space, 1.5em);
+}
+
+/* Font sizes */

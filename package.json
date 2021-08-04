@@ -1,0 +1,40 @@
+{
+  "name": "bluerayhunt",
+  "version": "1.0.0",
+  "description": "Run yarn install or npm install Run yarn start or npm start to have all bundled in the dist folder. Run yarn build or npm build to have all bundled and minified in the build folder.",
+  "main": "index.html",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "dev": "parcel src/index.html",
+    "build": "parcel build --no-minify --no-content-hash src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaufberater/brh-markup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaufberater/brh-markup/issues"
+  },
+  "homepage": "https://github.com/kaufberater/brh-markup#readme",
+  "devDependencies": {
+    "autoprefixer": "<10.0.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-modules": "^4.0.0",
+    "posthtml-include": "^1.7.1",
+    "prettier": "^2.3.0",
+    "sass": "^1.35.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "alpinejs": "^3.2.2",
+    "bootstrap": "^5.0.2",
+    "postcss": "^8.3.6"
+  }
+}
