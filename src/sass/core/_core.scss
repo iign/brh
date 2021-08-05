@@ -131,3 +131,14 @@ ul {
 }
 
 /* Font sizes */
+.br-section-title {
+  font-size: rem(28px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (min-width: 992px) {
+    font-size: rem(36px);
+  }
+}

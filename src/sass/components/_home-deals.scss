@@ -1,0 +1,8 @@
+.br-home-deals-title {
+  svg {
+    max-width: 46px;
+    @media (min-width: 992px) {
+      max-width: unset;
+    }
+  }
+}

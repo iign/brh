@@ -1,0 +1,54 @@
+@use "sass:math";
+/* Media item */
+
+.br-media {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .br-btn {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+.br-media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 2fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @media (min-width: 992px) {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 4fr));
+  }
+}
+
+.outer {
+  position: relative;
+  background: pink;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: math.div(49, 36) * 100%;
+  }
+  > .inner {
+    background: gold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
