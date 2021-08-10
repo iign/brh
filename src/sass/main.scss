@@ -13,7 +13,9 @@
 @import "core/helpers";
 @import "core/core";
 
-@import "components/header";
+@import "layout/header";
+@import "layout/footer";
+
 @import "components/burger";
 @import "components/input";
 @import "components/dropdown";
@@ -21,3 +23,5 @@
 @import "components/home-deals";
 @import "components/button";
 @import "components/media";
+@import "components/slider";
+@import "components/newsletter";

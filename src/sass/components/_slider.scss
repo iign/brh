@@ -1,0 +1,120 @@
+/* 
+  Deals slider
+  Design: https://www.figma.com/file/eJlra1CHXnzitkmUnpDQdH/BluRayHunt?node-id=196%3A11432
+  Used in: index.html
+*/
+
+.br-slider-container {
+  padding: 0;
+
+  @media (min-width: 576px) {
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+  }
+}
+
+.br-slider-wrap {
+  position: relative;
+}
+
+.br-slider__scroller {
+  display: flex;
+  position: relative;
+  overflow: auto;
+  scroll-snap-type: x proximity;
+
+  padding-bottom: 10px;
+
+  scrollbar-color: #99c6db #d5eaf6;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e5f3fa;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #0c2a3c;
+    outline: 0;
+    border-radius: 9px;
+  }
+}
+
+.br-slider__item {
+  width: 130px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  @media (min-width: 992px) {
+    width: 152px;
+  }
+}
+
+.br-slider__item {
+  margin-left: 10px;
+
+  @media (min-width: 576px) {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 10px;
+    @media (min-width: 576px) {
+      margin-right: 0;
+    }
+  }
+}
+
+.br-slider__item + .br-slider__item {
+  margin-left: 10px;
+
+  @media (min-width: 992px) {
+    margin-left: 40px;
+  }
+}
+
+.br-slider__buttons {
+  button {
+    background: transparent;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: #065fab;
+      }
+    }
+
+    &:active {
+      outline: 0;
+      box-shadow: none;
+      background-color: #afd6e9;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px #2b94d2;
+    }
+
+    &:disabled,
+    .disabled {
+      outline: 0;
+      box-shadow: none;
+      svg path {
+        fill: #83c3e2;
+      }
+    }
+  }
+}

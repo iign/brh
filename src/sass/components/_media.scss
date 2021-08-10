@@ -11,10 +11,57 @@
   align-items: center;
 
   .br-btn {
-    margin-top: auto;
     display: block;
     width: 100%;
+    margin-top: 4px;
   }
+
+  &:hover {
+    .br-media__primary-info {
+      color: #2b94d2;
+    }
+  }
+}
+
+.br-media__primary-info {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.br-media__bottom {
+  margin-top: auto;
+  width: 100%;
+}
+
+.br-media__thumbnail-link {
+  &:focus {
+    outline: 0;
+    opacity: 0.9;
+  }
+}
+
+.br-media__secondary-info {
+  font-size: rem(10px);
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.br-media__info {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.br-media__title {
+  font-size: rem(12px);
+  font-weight: bold;
+}
+
+.br-media__price {
+  color: #2b94d2;
+  font-weight: bold;
+  font-size: rem(18px);
+  margin-top: 6px;
+  font-variant-numeric: tabular-nums;
 }
 
 .br-media-grid {
@@ -26,10 +73,15 @@
   @media (min-width: 992px) {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 4fr));
+  }
+
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(auto-fill, minmax(180px, 4fr));
   }
 }
 
+// Aspect ratio stuff (not used right now)
 .outer {
   position: relative;
   background: pink;
