@@ -22,8 +22,8 @@
   position: relative;
   overflow: auto;
   scroll-snap-type: x proximity;
-
-  padding-bottom: 10px;
+  padding-top: 6px; // Account for hover transform on child elements
+  padding-bottom: 10px; // Give some distance for scrollbar
 
   scrollbar-color: #99c6db #d5eaf6;
   scrollbar-width: none;
@@ -52,6 +52,12 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  position: relative;
+  transition: 200ms ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   @media (min-width: 992px) {
     width: 152px;

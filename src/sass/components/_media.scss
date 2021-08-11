@@ -5,10 +5,12 @@
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  transition: 200ms ease;
 
   .br-btn {
     display: block;
@@ -19,6 +21,12 @@
   &:hover {
     .br-media__primary-info {
       color: #2b94d2;
+    }
+  }
+
+  &--mini {
+    &:hover {
+      transform: translateY(-5px);
     }
   }
 }
@@ -61,7 +69,9 @@
   font-weight: bold;
   font-size: rem(18px);
   margin-top: 6px;
+  text-decoration: none;
   font-variant-numeric: tabular-nums;
+  width: 100%;
 }
 
 .br-media-grid {
