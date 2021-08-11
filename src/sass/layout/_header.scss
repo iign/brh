@@ -96,9 +96,9 @@ $header_height: 165px;
 
   @media (min-width: 992px) {
     position: relative;
-    height: inherit;
+    height: max-content;
     top: 0;
-    display: none !important;
+    display: block !important;
   }
 }
 

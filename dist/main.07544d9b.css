@@ -10423,9 +10423,11 @@ ul {
 @media (min-width: 992px) {
   .br-menu {
     position: relative;
-    height: inherit;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     top: 0;
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -10866,6 +10868,9 @@ ul {
   display: block;
   width: 100%;
   margin-top: 4px;
+}
+.br-media:hover:not(.br-media--mini) {
+  box-shadow: 0px 0px 20px #99c6db;
 }
 .br-media:hover .br-media__primary-info {
   color: #2b94d2;
