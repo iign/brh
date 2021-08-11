@@ -10687,6 +10687,9 @@ ul {
   display: block;
   z-index: 12;
 }
+.br-dropdown--flags .br-dropdown__option {
+  justify-content: space-between;
+}
 
 .br-dropdown__btn {
   cursor: pointer;
@@ -11099,6 +11102,13 @@ ul {
   .br-newsletter__input-group {
     text-align: right;
   }
+}
+
+.br-banner {
+  box-shadow: 0px 0px 10px #61b7df;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

@@ -16,6 +16,12 @@
       z-index: 12;
     }
   }
+
+  &--flags {
+    .br-dropdown__option {
+      justify-content: space-between;
+    }
+  }
 }
 
 .br-dropdown__btn {
