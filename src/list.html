@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="sass/main.scss" />
+  <script defer src="https://unpkg.com/alpinejs@3.1.0/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>BlueRay Hunt</title>
+</head>
+
+<body>
+  <include src="partials/_header.html"></include>
+
+  <main>
+
+    <div class="container my-5">
+      <h2 class="br-section-title br-home-deals-title mb-3">
+        <span>Blu-ray</span>
+      </h2>
+
+      <div class="br-col-layout">
+        <aside class="br-col-layout__sidebar br-drawer active" id="br-drawer">
+          <div class="br-drawer__header">
+            <div class="br-drawer__inner">
+              <span class="br-drawer__title">Filters</span>
+              <button class="br-drawer__btn-toggle js-toggle-filters">
+                <span class="visually-hidden">Toggle</span>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="2.06066" y1="1.9416" x2="23.2739" y2="23.1548" stroke="#0C2A3C" stroke-width="3" />
+                  <line x1="1.55653" y1="23.1525" x2="22.7697" y2="1.93933" stroke="#0C2A3C" stroke-width="3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="br-drawer__content">
+
+            <div class="br-drawer-widget">
+              <div class="br-drawer-widget__title">
+                Formats
+              </div>
+              <div class="br-drawer-widget__content">
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="" checked>
+                  <span>Blu-ray</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>Blu-ray / 4K Ultra HD</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>Blu-ray (Collector's Edition)</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>Blu-ray 4K UHD</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>Blu-ray 4K UHD Steelbook</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>Blu-ray Steelbook</span>
+                </label>
+                <label class="br-checkbox d-flex">
+                  <input type="checkbox" name="" id="">
+                  <span>DVD</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="br-drawer-widget">
+              <div class="br-drawer-widget__title">
+                Price
+              </div>
+              <div class="br-drawer-widget__content">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Min" size="4"
+                      value="50">
+                  </div>
+                  <span class="mx-2">to</span>
+                  <div>
+                    <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Max" size="4">
+                  </div>
+                </div>
+                <button class="br-btn-action w-100 mt-2">Apply</button>
+              </div>
+            </div>
+
+            <div class="br-drawer-widget">
+              <div class="br-drawer-widget__title">
+                Genres
+              </div>
+              <div class="br-drawer-widget__content">
+                <input class="br-input-muted w-100" type="text" name="" id="" placeholder="Search">
+                <div class="mt-2">
+                  scroller
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="br-drawer__footer">
+            <button class="br-btn-action w-100">Apply</button>
+          </div>
+        </aside>
+      </div>
+
+
+    </div>
+  </main>
+
+  <include src="partials/_footer.html"></include>
+
+</body>
+
+</html>
