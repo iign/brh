@@ -32,6 +32,16 @@
   color: #0c2a3c;
   font-weight: bold;
 
+  &:hover {
+    &::marker {
+      color: #0c2a3c;
+    }
+    a {
+      color: var(--color-one);
+    }
+    color: var(--color-one);
+  }
+
   a {
     color: #0c2a3c;
     text-decoration: none;
@@ -44,6 +54,7 @@
 
 .br-sidebar-list-item__price {
   color: #2b94d2;
+  font-weight: normal;
   font-variant-numeric: tabular-nums;
 }
 
