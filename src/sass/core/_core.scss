@@ -42,9 +42,9 @@ body {
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: minmax(0, 1fr);
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
+  // grid-template-columns: minmax(0, 1fr);
   color: var(--color-text);
   font-family: var(--font-family);
 }
@@ -131,14 +131,20 @@ ul {
 /* Layout for filter column and main content */
 
 .br-col-layout {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: 992px) {
+    flex-direction: row;
     display: flex;
   }
 }
 
 .br-col-layout__sidebar {
   flex-grow: 0;
+  order: 1;
   @media (min-width: 992px) {
+    order: 0;
     width: 270px;
     margin-right: 20px;
   }
@@ -146,6 +152,10 @@ ul {
 
 .br-col-layout__main {
   flex-grow: 1;
+  order: 0;
+  @media (min-width: 992px) {
+    order: 1;
+  }
 }
 
 // Alpinejs helper

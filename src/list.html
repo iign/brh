@@ -27,94 +27,597 @@
       </h2>
 
       <div class="br-col-layout">
-        <aside class="br-col-layout__sidebar br-drawer active" id="br-drawer">
-          <div class="br-drawer__header">
-            <div class="br-drawer__inner">
-              <span class="br-drawer__title">Filters</span>
-              <button class="br-drawer__btn-toggle js-toggle-filters">
-                <span class="visually-hidden">Toggle</span>
-                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="2.06066" y1="1.9416" x2="23.2739" y2="23.1548" stroke="#0C2A3C" stroke-width="3" />
-                  <line x1="1.55653" y1="23.1525" x2="22.7697" y2="1.93933" stroke="#0C2A3C" stroke-width="3" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="br-drawer__content">
+        <aside class="br-col-layout__sidebar">
 
-            <div class="br-drawer-widget">
-              <div class="br-drawer-widget__title">
-                Formats
-              </div>
-              <div class="br-drawer-widget__content">
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="" checked>
-                  <span>Blu-ray</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>Blu-ray / 4K Ultra HD</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>Blu-ray (Collector's Edition)</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>Blu-ray 4K UHD</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>Blu-ray 4K UHD Steelbook</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>Blu-ray Steelbook</span>
-                </label>
-                <label class="br-checkbox d-flex">
-                  <input type="checkbox" name="" id="">
-                  <span>DVD</span>
-                </label>
+          <div class="br-drawer (active)" id="br-drawer">
+            <div class="br-drawer__header">
+              <div class="br-drawer__inner">
+                <span class="br-drawer__title">Filters</span>
+                <button class="br-drawer__btn-toggle js-toggle-filters">
+                  <span class="visually-hidden">Toggle</span>
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="2.06066" y1="1.9416" x2="23.2739" y2="23.1548" stroke="#0C2A3C" stroke-width="3" />
+                    <line x1="1.55653" y1="23.1525" x2="22.7697" y2="1.93933" stroke="#0C2A3C" stroke-width="3" />
+                  </svg>
+                </button>
               </div>
             </div>
+            <div class="br-drawer__content">
 
-            <div class="br-drawer-widget">
-              <div class="br-drawer-widget__title">
-                Price
-              </div>
-              <div class="br-drawer-widget__content">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Min" size="4"
-                      value="50">
-                  </div>
-                  <span class="mx-2">to</span>
-                  <div>
-                    <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Max" size="4">
-                  </div>
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Formats
                 </div>
-                <button class="br-btn-action w-100 mt-2">Apply</button>
-              </div>
-            </div>
-
-            <div class="br-drawer-widget">
-              <div class="br-drawer-widget__title">
-                Genres
-              </div>
-              <div class="br-drawer-widget__content">
-                <input class="br-input-muted w-100" type="text" name="" id="" placeholder="Search">
-                <div class="mt-2">
-                  scroller
+                <div class="br-drawer-widget__content">
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="" checked>
+                    <span>Blu-ray</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Blu-ray / 4K Ultra HD</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Blu-ray (Collector's Edition)</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Blu-ray 4K UHD</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Blu-ray 4K UHD Steelbook</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Blu-ray Steelbook</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>DVD</span>
+                  </label>
                 </div>
               </div>
+
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Price
+                </div>
+                <div class="br-drawer-widget__content">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Min" size="4"
+                        value="50">
+                    </div>
+                    <span class="mx-2">to</span>
+                    <div>
+                      <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Max" size="4">
+                    </div>
+                  </div>
+                  <button class="br-btn-action w-100 mt-2">Apply</button>
+                </div>
+              </div>
+
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Genres
+                </div>
+                <div class="br-drawer-widget__content">
+                  <input class="br-input-muted w-100" type="text" name="" id="" placeholder="Search">
+                  <div class="br-drawer-widget__content mt-2">
+                    <!-- Add scroller if we want a maximum height and scroll inside -->
+                    <div class="br-drawer-widget__scroller">
+                      <label class="br-checkbox">
+                        <input type="checkbox" checked>
+                        <span>Action</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Adventure</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Animation</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Anime</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Biography</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Comedy</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Comic book</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Coming of age</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Crime</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Dark humour</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Documentary</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Drama</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Epic</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Erotic</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Family</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Family</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Family</span>
+                      </label>
+                      <label class="br-checkbox">
+                        <input type="checkbox">
+                        <span>Other</span>
+                      </label>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Releases
+                </div>
+                <div class="br-drawer-widget__content">
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="" checked>
+                    <span>Release calendar</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Now available</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>New releases</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Coming soon</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Recently listed</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>New pre-orders</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Condition
+                </div>
+                <div class="br-drawer-widget__content">
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="" checked>
+                    <span>New</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Used</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="br-drawer-widget">
+                <div class="br-drawer-widget__title">
+                  Deals
+                </div>
+                <div class="br-drawer-widget__content">
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="" checked>
+                    <span>Best deals</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>New deals</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Lowest price</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>New price drops</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>New lowest prices</span>
+                  </label>
+                  <label class="br-checkbox d-flex">
+                    <input type="checkbox" name="" id="">
+                    <span>Big price drops</span>
+                  </label>
+                </div>
+              </div>
+
             </div>
 
+            <div class="br-drawer__footer">
+              <button class="br-btn-action w-100">Apply</button>
+            </div>
+          </div>
+
+          <a href="#" class="br-home-banner br-banner mt-5">
+            <img class="br-banner__img" src="img/banner-kids.jpg" alt="Banner kids">
+            <div class="br-banner__text">
+              DVDs<br>
+              for kids
+            </div>
+          </a>
+
+          <div class="br-sidebar__widget mt-5">
+            <h3 class="br-sidebar__title">DVD Bestsellers</h3>
+
+            <ol class="br-sidebar-list">
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Black Widow</div>
+                  <div class="br-sidebar-list-item__price">$45.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Space Jam: A New Legacy</div>
+                  <div class="br-sidebar-list-item__price">$45.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Loki</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Fear Street: 1666</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">A Classic Horror Story</div>
+                  <div class="br-sidebar-list-item__price">$19.45</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">A Quiet Place Part II</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Wrath of Men</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Luca</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Loki</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+              <li class="br-sidebar-list-item">
+                <a href="#">
+                  <div class="br-sidebar-list-item__title">Fear Street: 1666</div>
+                  <div class="br-sidebar-list-item__price">$9.99</div>
+                </a>
+              </li>
+            </ol>
 
           </div>
-          <div class="br-drawer__footer">
-            <button class="br-btn-action w-100">Apply</button>
-          </div>
+
         </aside>
+
+        <section class="br-col-layout__main">
+          <div class="br-media-grid">
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-01.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-02.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-03.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-01.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-02.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-03.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-01.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-02.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-03.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+
+            <div class="br-media-grid__banner">Banner</div>
+
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="img/media-04.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+
+          </div><!-- end media grid -->
+        </section>
+
       </div>
 
 
