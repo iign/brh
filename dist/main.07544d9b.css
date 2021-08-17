@@ -11166,36 +11166,75 @@ ul {
   fill: #83c3e2;
 }
 
-.br-newsletter {
+.br-form-block {
+  position: relative;
   background-color: #0c2a3c;
   color: white;
   padding: 15px;
   box-shadow: 0px 0px 20px #61b7df;
   border-radius: 5px;
   text-align: center;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
-  .br-newsletter {
+  .br-form-block {
     padding: 30px;
   }
 }
-
-.br-newsletter__title {
+.br-form-block .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0c2a3c;
+  mix-blend-mode: hard-light;
+}
+.br-form-block__title {
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 1.3;
 }
 @media (min-width: 768px) {
-  .br-newsletter__title {
+  .br-form-block__title {
     text-align: left;
     font-size: 2.25rem;
     line-height: 1.1;
   }
 }
 
+.br-form-block__subtitle {
+  font-size: 1rem;
+}
 @media (min-width: 768px) {
-  .br-newsletter__input-group {
+  .br-form-block__subtitle {
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .br-form-block__input-group {
     text-align: right;
+  }
+}
+
+.br-form-block__img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .br-form-block__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.125rem;
   }
 }
 
@@ -11627,6 +11666,64 @@ ul {
   left: 2px;
   top: 4px;
   position: absolute;
+}
+
+.br-pagination {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.br-pagination li {
+  margin-right: 5px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .br-pagination li {
+    width: auto;
+  }
+}
+.br-pagination li a {
+  text-decoration: none;
+}
+.br-pagination li + li {
+  margin-left: 5px;
+}
+
+.br-pagination__num {
+  display: none;
+}
+@media (min-width: 768px) {
+  .br-pagination__num {
+    display: block;
+  }
+}
+
+.br-pagination__btn {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: var(--color-one);
+  color: white;
+  border-radius: 3px;
+  padding: 6px 22px;
+  display: block;
+}
+.br-pagination__btn--next {
+  background-color: #0c2a3c;
+}
+@media (min-width: 768px) {
+  .br-pagination__btn {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1px red;
+    cursor: pointer;
+    padding: inherit;
+  }
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
