@@ -11209,7 +11209,6 @@ ul {
   justify-content: flex-end;
   height: 150px;
   text-decoration: none;
-  max-width: 350px;
 }
 .br-banner:before {
   opacity: 0;
@@ -11218,7 +11217,6 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   z-index: 1;
   background-color: #2b94d2;
   mix-blend-mode: multiply;
