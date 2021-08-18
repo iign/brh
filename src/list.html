@@ -648,8 +648,8 @@
 
           <ul class="br-pagination mt-5">
 
-            <li class="disabled">
-              <a href="#" class="br-pagination__btn br-pagination__btn--prev">
+            <li>
+              <a href="#" class="br-pagination__btn br-pagination__btn--prev disabled" disabled>
                 <span class="visually-hidden">Previous</span>
                 <span class="d-md-none">Previous</span>
                 <svg class="d-none d-md-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -662,8 +662,18 @@
             </li>
 
             <li class="br-pagination__num">
-              <a href="#">
+              <a href="#" class="disabled" disabled>
                 <span>1</span>
+              </a>
+            </li>
+            <li class="br-pagination__num">
+              <a href="#">
+                <span>2</span>
+              </a>
+            </li>
+            <li class="br-pagination__num">
+              <a href="#">
+                <span>3</span>
               </a>
             </li>
 
@@ -679,24 +689,6 @@
                 </svg>
               </a>
             </li>
-
-            <!-- <li><a href="#" rel="prev">&laquo;</a></li>
-
-            <li class="disabled"><span>1</span></li>
-
-            <li class="active"><span>2</span></li>
-
-            <li><a href="{{ $url }}">3</a></li>
-
-            <li>
-              <a href="#" rel="next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M13.1717 12L8.22168 7.05001L9.63568 5.63601L15.9997 12L9.63568 18.364L8.22168 16.95L13.1717 12Z"
-                    fill="#2B94D2" />
-                </svg>
-              </a>
-            </li> -->
 
           </ul>
 

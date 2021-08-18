@@ -95,6 +95,24 @@
   }
 }
 
+.br-media-grid-wide {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 2fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 18px;
+  }
+}
+
 .br-media-grid__banner {
   grid-area: 5 / 1 / 5 / 3;
   background-color: #0c2a3c;

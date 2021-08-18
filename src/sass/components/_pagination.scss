@@ -27,6 +27,38 @@
   @media (min-width: 768px) {
     display: block;
   }
+
+  a {
+    border-radius: 3px;
+    background-color: white;
+    color: #0c2a3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(14px);
+    width: 30px;
+    height: 30px;
+
+    &:hover {
+      background-color: #afd6e9;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: inset 0 0 0 1px #2b94d2;
+    }
+
+    &:active {
+      background-color: #2b94d2;
+    }
+
+    &.disabled,
+    [disabled] {
+      pointer-events: none;
+      cursor: not-allowed;
+      color: #c4c4c4;
+    }
+  }
 }
 
 .br-pagination__btn {
@@ -39,8 +71,20 @@
   padding: 6px 22px;
   display: block;
 
+  &:focus {
+    outline: 0;
+    box-shadow: inset 0 0 0 1px #2b94d2;
+  }
+
   &--next {
     background-color: #0c2a3c;
+  }
+
+  &.disabled,
+  [disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6;
   }
 
   @media (min-width: 768px) {
@@ -50,7 +94,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 0 0 1px red;
     cursor: pointer;
     padding: inherit;
   }

@@ -48,3 +48,25 @@
     max-width: 100%;
   }
 }
+
+// Extra footer
+
+.br-footer-separator {
+  border: none;
+  border-bottom: 5px solid #0e3f5c;
+  color: white;
+}
+
+.footer__section-title {
+  font-size: rem(28px);
+  font-weight: bold;
+
+  @media (min-width: 992px) {
+    font-size: rem(36px);
+  }
+}
+
+.footer__intro-text {
+  font-size: rem(14px);
+  line-height: 1.5;
+}

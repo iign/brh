@@ -24,7 +24,18 @@
     mix-blend-mode: hard-light;
   }
 
-  &--preorder {
+  &--bright {
+    box-shadow: 0px 0px 10px #051119;
+    background-color: #d5eaf6;
+    padding: 15px;
+
+    @media (min-width: 992px) {
+      padding: 30px;
+    }
+
+    .br-form-block__title {
+      color: #0c2a3c;
+    }
   }
 }
 
