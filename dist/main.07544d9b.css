@@ -11087,6 +11087,22 @@ ul {
      object-fit: contain;
 }
 
+.br-skeleton .br-media .br-media__thumbnail-link {
+  background-color: #d5eaf6;
+  border-radius: 3px;
+}
+.br-skeleton .br-media .br-media__thumbnail-link img {
+  opacity: 0;
+}
+.br-skeleton .br-media .br-media__secondary-info,
+.br-skeleton .br-media .br-media__primary-info,
+.br-skeleton .br-media .br-media__price,
+.br-skeleton .br-media .br-btn {
+  background-color: #d5eaf6;
+  border-radius: 3px;
+  color: #d5eaf6;
+}
+
 /* 
   Deals slider
   Design: https://www.figma.com/file/eJlra1CHXnzitkmUnpDQdH/BluRayHunt?node-id=196%3A11432

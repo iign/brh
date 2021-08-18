@@ -147,3 +147,26 @@
     }
   }
 }
+
+// skeleton loaders
+
+.br-skeleton {
+  .br-media {
+    .br-media__thumbnail-link {
+      background-color: #d5eaf6;
+      border-radius: 3px;
+      img {
+        opacity: 0;
+      }
+    }
+
+    .br-media__secondary-info,
+    .br-media__primary-info,
+    .br-media__price,
+    .br-btn {
+      background-color: #d5eaf6;
+      border-radius: 3px;
+      color: #d5eaf6;
+    }
+  }
+}
