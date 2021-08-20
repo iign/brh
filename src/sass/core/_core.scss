@@ -142,19 +142,28 @@ ul {
 
 .br-col-layout__sidebar {
   flex-grow: 0;
-  order: 1;
+  flex-shrink: 0;
+
   @media (min-width: 992px) {
-    order: 0;
     width: 270px;
-    margin-right: 20px;
+
+    margin-right: 0;
+    margin-left: 40px;
   }
 }
 
-.br-col-layout__main {
-  flex-grow: 1;
-  order: 0;
-  @media (min-width: 992px) {
-    order: 1;
+.br-col-layout.inverted-on-desktop {
+  .br-col-layout__sidebar {
+    margin-right: 20px;
+  }
+
+  .br-col-layout__main {
+    flex-grow: 1;
+    order: 0;
+
+    @media (min-width: 992px) {
+      order: 1;
+    }
   }
 }
 
@@ -178,4 +187,10 @@ ul {
   @media (min-width: 992px) {
     font-size: rem(36px);
   }
+}
+
+.br-article-block {
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
 }

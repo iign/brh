@@ -1,0 +1,346 @@
+/**
+* Product page
+* Figma link: https://www.figma.com/file/eJlra1CHXnzitkmUnpDQdH/BluRayHunt?node-id=196%3A15147
+* Used in: product.html
+*/
+
+.product-header {
+  height: 200px;
+  width: 100%;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2b94d2;
+    mix-blend-mode: multiply;
+  }
+
+  img {
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-block {
+  margin-top: -160px;
+  margin-bottom: 44px;
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.br-prod-ranking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  svg + svg {
+    margin-left: 3px;
+  }
+}
+
+// Image slider
+.br-prod-slider__list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.br-prod-slider__img-list {
+  position: relative;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.br-prod-slider__img-item {
+  height: 70px;
+  cursor: pointer;
+  margin: 0 5px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  img {
+    max-height: 100%;
+  }
+}
+
+.br-prod-slider__btn {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+.br-prod-slider__main {
+  cursor: zoom-in;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.br-prod__title {
+  font-size: rem(28px);
+  font-weight: bold;
+  @media (min-width: 992px) {
+    font-size: rem(36px);
+  }
+}
+
+.br-prod__ranking-val {
+  font-size: rem(18px);
+  font-weight: bold;
+}
+
+.br-prod__toolbar-btn {
+  margin: 0 3px;
+}
+
+.br-prod__toolbar-btn {
+  background-color: #d5eaf6;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  position: relative;
+
+  &.active {
+    background-color: #2b94d2;
+  }
+
+  &:hover {
+    .br-tooltip {
+      display: block;
+    }
+  }
+}
+
+.br-tooltip {
+  padding: 5px 9px;
+  position: absolute;
+  left: 0;
+  background-color: #efefef;
+  color: #0c2a3c;
+  font-size: rem(12px);
+  z-index: 5;
+  text-align: left;
+  top: calc(100% + 9px);
+  border-radius: 3px;
+  min-width: 100px;
+  display: none;
+
+  &:before {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 9px;
+    width: 13px;
+    height: 13px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    background-color: #efefef;
+  }
+}
+
+.br-prod__features-block {
+  font-size: rem(14px);
+  text-align: center;
+  line-height: 1.5;
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+
+.br-prod__ratings-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.br-prod__rating {
+  font-weight: 900;
+  font-size: rem(14px);
+}
+
+.br-prod__separator {
+  border: none;
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.br-prod__pricing-title {
+  text-align: center;
+  font-size: rem(20px);
+  font-weight: bold;
+  @media (min-width: 992px) {
+    text-align: left;
+    font-size: rem(24px);
+  }
+}
+
+.br-prod__pricing-main {
+  font-weight: bold;
+  font-size: rem(28px);
+  line-height: 1;
+  margin-right: 10px;
+  @media (min-width: 992px) {
+    font-size: rem(36px);
+  }
+}
+
+.br-prod__pricing-secondary {
+  color: #c4c4c4;
+  font-size: rem(18px);
+  font-variant-numeric: tabular-nums;
+}
+
+.br-prod__pricing-nums {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  @media (min-width: 992px) {
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.br-prod__pricing-block {
+  .br-btn {
+    padding: 6px 15px;
+    margin-left: auto;
+
+    @media (min-width: 992px) {
+    }
+  }
+}
+
+.br-product-detail {
+  --flow-space: 1rem;
+  font-size: rem(14px);
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+}
+
+.br-flow > .br-product-detail__body-title + * {
+  margin-top: 5px;
+}
+
+.br-product-detail__body {
+  padding: 20px 10px 0 10px;
+}
+
+.br-product-detail__title {
+  user-select: none;
+  background-color: #0c2a3c;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: normal;
+  font-size: rem(18px);
+  line-height: 1.2;
+  cursor: pointer;
+
+  &:after {
+    right: 10px;
+  }
+}
+
+.br-product-detail + .br-product-detail {
+  margin-top: 10px;
+
+  @media (min-width: 992px) {
+    margin-top: 40px;
+  }
+}
+
+.br-product-detail--specs .br-product-detail__body {
+  @media (min-width: 992px) {
+    column-count: 2;
+    column-gap: 25px;
+
+    ul {
+      list-style: none;
+    }
+
+    .br-product-detail__spec-group {
+      break-inside: avoid;
+    }
+  }
+}
+
+// Movie stills
+.br-product-detail__stills {
+  @include scrollbars(11px, #83c3e2, #f5f5f5);
+
+  @media (min-width: 992px) {
+    padding-bottom: 10px;
+    display: flex;
+    overflow: auto;
+  }
+
+  img {
+    width: 100%;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    @media (min-width: 992px) {
+      width: auto;
+      height: 100px;
+    }
+  }
+
+  img + img {
+    margin-top: 10px;
+    @media (min-width: 992px) {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+}
+
+.br-product-detail--stills {
+  .br-product-detail__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
