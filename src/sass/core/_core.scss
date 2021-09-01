@@ -7,6 +7,8 @@ html {
 
   scrollbar-color: #0c2a3c #e5f3fa;
   scrollbar-width: thin;
+
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
