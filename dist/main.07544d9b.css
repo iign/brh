@@ -12460,6 +12460,7 @@ summary::-webkit-details-marker {
   border-radius: 5px;
   padding: 20px;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .br-sidebar-menu li {
