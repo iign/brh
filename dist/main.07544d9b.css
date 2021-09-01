@@ -10321,7 +10321,7 @@ ul {
 
 .br-flow > * + * {
   line-height: 1.5;
-  margin-top: var(--flow-space, 1.5em);
+  margin-top: var(--flow-space, 1em);
 }
 
 /* Font sizes */
@@ -10337,10 +10337,56 @@ ul {
   }
 }
 
-.br-article-block {
-  background-color: white;
-  border-radius: 5px;
-  width: 100%;
+.br-prose {
+  font-size: 0.875rem;
+}
+.br-prose h1 {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+@media (min-width: 992px) {
+  .br-prose h1 {
+    font-size: 2.25rem;
+  }
+}
+.br-prose h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+@media (min-width: 992px) {
+  .br-prose h2 {
+    font-size: 1.875rem;
+  }
+}
+.br-prose h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+@media (min-width: 992px) {
+  .br-prose h3 {
+    font-size: 1.5rem;
+  }
+}
+.br-prose h4 {
+  font-weight: bold;
+  font-size: 1.0625rem;
+  line-height: 1.2;
+}
+@media (min-width: 992px) {
+  .br-prose h4 {
+    font-size: 1.125rem;
+  }
+}
+.br-prose ul,
+.br-prose ol {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+.br-prose a {
+  text-decoration: none;
+  color: #2b94d2;
 }
 
 .br-header {
@@ -11953,14 +11999,17 @@ summary::-webkit-details-marker {
   height: 100%;
 }
 
-.product-block {
+.br-product-block {
   margin-top: -160px;
   margin-bottom: 44px;
   position: relative;
   padding-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
 }
 @media (min-width: 992px) {
-  .product-block {
+  .br-product-block {
     padding-bottom: 36px;
   }
 }
@@ -12404,6 +12453,34 @@ summary::-webkit-details-marker {
   cursor: not-allowed;
   opacity: 0.3;
   pointer-events: none;
+}
+
+.br-article-block {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.br-sidebar-menu li {
+  display: block;
+}
+.br-sidebar-menu li + li {
+  margin-top: 10px;
+}
+
+.br-sidebar-menu__item {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #0c2a3c;
+}
+.br-sidebar-menu__item.active {
+  background-color: #2b94d2;
+  color: white;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

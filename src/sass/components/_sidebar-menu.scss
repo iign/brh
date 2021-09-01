@@ -1,0 +1,26 @@
+// Sidebar menu & Table of contents.
+
+.br-sidebar-menu {
+  li {
+    display: block;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+.br-sidebar-menu__item {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: rem(18px);
+  text-decoration: none;
+  color: #0c2a3c;
+
+  &.active {
+    background-color: #2b94d2;
+    color: white;
+  }
+}

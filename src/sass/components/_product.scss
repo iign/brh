@@ -30,11 +30,16 @@
   }
 }
 
-.product-block {
+.br-product-block {
   margin-top: -160px;
   margin-bottom: 44px;
   position: relative;
   padding-bottom: 10px;
+
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+
   @media (min-width: 992px) {
     padding-bottom: 36px;
   }
