@@ -10340,6 +10340,11 @@ ul {
 .br-prose {
   font-size: 0.875rem;
 }
+@media (min-width: 992px) {
+  .br-prose {
+    font-size: 1rem;
+  }
+}
 .br-prose h1 {
   font-weight: bold;
   font-size: 1.75rem;
