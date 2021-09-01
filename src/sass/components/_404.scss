@@ -1,0 +1,50 @@
+.br-404 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/404.jpg);
+  background-color: rgba(12, 42, 60, 0.8);
+  background-blend-mode: multiply;
+  color: white;
+
+  @media (min-width: 992px) {
+    background-image: linear-gradient(
+        rgba(12, 42, 60, 0.8),
+        rgba(12, 42, 60, 0.8)
+      ),
+      url(../img/404.jpg);
+    background-blend-mode: unset;
+
+    padding-bottom: 100px;
+  }
+}
+
+.br-404__title {
+  font-size: rem(100px);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1;
+  @media (min-width: 992px) {
+    text-align: start;
+    font-size: rem(180px);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: rem(200px);
+  }
+}
+
+.br-404__subtitle {
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: rem(28px);
+  span {
+    color: #f74b15;
+  }
+
+  @media (min-width: 992px) {
+    text-align: start;
+    font-size: rem(36px);
+    padding-left: 20px;
+  }
+}
