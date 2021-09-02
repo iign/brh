@@ -10303,7 +10303,7 @@ ul {
   .br-col-layout__sidebar {
     width: 270px;
     margin-right: 0;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 }
 
@@ -10801,6 +10801,55 @@ ul {
 }
 .br-input-muted::placeholder {
   color: #7d7d7d;
+}
+
+.br-label-sm {
+  font-size: 0.75rem;
+}
+
+.br-select {
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  min-height: 30px;
+  padding: 7px 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.00011 4.97668L10.1251 0.851685L11.3034 2.03002L6.00011 7.33335L0.696777 2.03002L1.87511 0.851685L6.00011 4.97668Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: 12px 8px;
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  background-color: #0c2a3c;
+  cursor: pointer;
+}
+
+.br-select-light {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding: 6px 26px 6px 6px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.99999 5.17217L11.95 0.222168L13.364 1.63617L6.99999 8.00017L0.635986 1.63617L2.04999 0.222168L6.99999 5.17217Z' fill='%230C2A3C'/%3E%3C/svg%3E%0A");
+  background-size: 12px 8px;
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.br-select-light:hover {
+  color: #2b94d2;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 5.17205L11.95 0.222046L13.364 1.63605L7 8.00005L0.636002 1.63605L2.05 0.222046L7 5.17205Z' fill='%232B94D2'/%3E%3C/svg%3E%0A");
+}
+.br-select-light:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #2b94d2;
 }
 
 .br-dropdown {

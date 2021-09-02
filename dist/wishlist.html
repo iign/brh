@@ -12,7 +12,7 @@
   <script defer="" src="https://unpkg.com/alpinejs@3.1.0/dist/cdn.min.js"></script>
   <script src="/main.fb6bbcaf.js"></script>
   <title>BlueRay Hunt</title>
-<script src="/register.js"></script></head>
+</head>
 
 <body>
   <header>
@@ -144,157 +144,318 @@
   </div>
 </header>
 
-  <main id="main" class="br-404">
+  <main id="main">
 
-    <div class="container pt-3 pb-4">
-      <div class="row py-lg-5">
-        <div class="col-12 col-lg-4">
-          <h1 class="br-404__title">404</h1>
-        </div>
-        <div class="col-12 col-lg-8 d-lg-flex align-items-center">
-          <div class="br-404__subtitle mt-3 mt-lg-0">
-            We can't find what you are looking for,
-            you can search again or see these
-            <span>super deals</span>
-            we have for you!
+    <div class="container">
+      <div class="br-col-layout">
+        <aside class="br-col-layout__sidebar mb-5 order-lg-2">
+          <div class="br-sidebar__widget mt-4">
+            <h3 class="br-sidebar__title">My Acount</h3>
+
+            <ul class="br-sidebar-menu">
+              <li>
+                <a href="#" class="br-sidebar-menu__item">Account</a>
+              </li>
+              <li>
+                <a href="#" class="br-sidebar-menu__item active">Wishlist</a>
+              </li>
+              <li>
+                <a href="#" class="br-sidebar-menu__item">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="br-sidebar-menu__item">Policies &amp; Procedures</a>
+              </li>
+              <li>
+                <a href="#" class="br-sidebar-menu__item">Terms of Use</a>
+              </li>
+            </ul>
+
           </div>
+
+        </aside>
+        <div class="br-col-layout__main br-account-block | mt-lg-4 mb-5">
+
+          <h1 class="br-section-title">
+            Wishlist
+          </h1>
+
+          <div class="d-flex justify-content-between mt-3 d-md-none">
+            <select name="select-format" id="select-format" class="br-select w-100 me-1">
+              <option value="" selected="" disabled="">Format</option>
+              <option value="Bluray">Bluray</option>
+              <option value="DVD">DVD</option>
+              <option value="DVD 4K">DVD 4K</option>
+            </select>
+            <select name="select-format" id="select-format" class="br-select w-100 ms-1">
+              <option value="" selected="" disabled="">Sort by</option>
+              <option value="">Newest first</option>
+            </select>
+          </div>
+
+          <div class="d-flex justify-content-end d-none d-md-flex">
+            <div class="d-flex align-items-center">
+              <label for="" class="br-label-sm me-1">Format</label>
+              <select name="" id="" class="me-3 br-select-light">
+                <option value="">Stuff</option>
+              </select>
+              <label for="" class="br-label-sm me-1">Sort by</label>
+              <select name="" id="" class="br-select-light">
+                <option value="" selected="">Price: Low to high</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="br-media-grid mt-3">
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-01.6c3aaaab.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-02.ee79b5d8.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-03.595c12d3.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-04.d707e067.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-01.6c3aaaab.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-02.ee79b5d8.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-03.595c12d3.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-04.d707e067.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-01.6c3aaaab.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">The Courier</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-02.ee79b5d8.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-03.595c12d3.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+            <div class="br-media">
+              <a href="#" class="br-media__thumbnail-link">
+                <img class="br-media__thumbnail" src="/media-04.d707e067.png" alt="Movie title">
+              </a>
+              <div class="br-media__info">
+                <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
+                <a href="#" class="br-media__primary-info">
+                  <span class="br-media__title">A Quiet Place Part II</span> (2021)
+                </a>
+              </div>
+
+              <div class="br-media__bottom">
+                <div class="br-media__price">$91.72</div>
+                <a href="#" class="br-btn br-media__cta">Buy</a>
+              </div>
+            </div>
+
+
+          </div><!-- end media grid -->
+
+          <ul class="br-pagination mt-5">
+
+            <li>
+              <a href="#" class="br-pagination__btn br-pagination__btn--prev disabled" disabled="">
+                <span class="visually-hidden">Previous</span>
+                <span class="d-md-none">Previous</span>
+                <svg class="d-none d-md-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8283 12L15.7783 16.95L14.3643 18.364L8.00032 12L14.3643 5.63599L15.7783 7.04999L10.8283 12Z" fill="#2B94D2"></path>
+                </svg>
+              </a>
+            </li>
+
+            <li class="br-pagination__num">
+              <a href="#" class="disabled" disabled="">
+                <span>1</span>
+              </a>
+            </li>
+            <li class="br-pagination__num">
+              <a href="#">
+                <span>2</span>
+              </a>
+            </li>
+            <li class="br-pagination__num">
+              <a href="#">
+                <span>3</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="br-pagination__btn br-pagination__btn--next">
+                <span class="visually-hidden">Next</span>
+                <span class="d-md-none">Next</span>
+                <svg class="d-none d-md-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.1717 12L8.22168 7.05001L9.63568 5.63601L15.9997 12L9.63568 18.364L8.22168 16.95L13.1717 12Z" fill="#2B94D2"></path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
+
       </div>
-
-      <div class="br-404__related">
-        <div class="d-flex align-items-center justify-content-between mb-3">
-          <h2 class="br-section-title br-home-deals-title">
-            <svg width="70" height="83" viewBox="0 0 70 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d)">
-                <path d="M34.9987 63C31.993 62.9997 29.0567 62.0965 26.5705 60.4074C24.0843 58.7183 22.1629 56.3213 21.0554 53.5271C19.9479 50.7328 19.7054 47.6704 20.3593 44.7367C21.0132 41.803 22.5334 39.1334 24.7227 37.074C27.4067 34.548 32.499 27.5 30.999 20C38.999 21 46.3112 33.1707 41.999 43.06C40.499 46.5 46.999 50 48.9987 43.06C49.5387 44.606 49.9987 46.268 49.9987 48C49.9987 51.9782 48.4184 55.7936 45.6053 58.6066C42.7923 61.4196 38.977 63 34.9987 63Z" fill="#F74B15"></path>
-              </g>
-              <defs>
-                <filter id="filter0_d" x="0" y="0" width="69.9987" height="83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                  <feOffset></feOffset>
-                  <feGaussianBlur stdDeviation="10"></feGaussianBlur>
-                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.702667 0 0 0 0 0.12549 0 0 0 0.5 0"></feColorMatrix>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
-                </filter>
-              </defs>
-            </svg>
-            <span>Super Deals</span>
-          </h2>
-          <button class="br-btn">view all</button>
-        </div>
-
-        <div class="br-media-grid-wide">
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-01.6c3aaaab.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">The Courier</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-02.ee79b5d8.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">A Quiet Place Part II</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-03.595c12d3.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">Game of Thrones: Complete Series</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-04.d707e067.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">A Quiet Place Part II</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-01.6c3aaaab.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">The Courier</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-          <div class="br-media">
-            <a href="#" class="br-media__thumbnail-link">
-              <img class="br-media__thumbnail" src="/media-02.ee79b5d8.png" alt="Movie title">
-            </a>
-            <div class="br-media__info">
-              <div class="br-media__secondary-info">Blu-ray 4K UHD</div>
-              <a href="#" class="br-media__primary-info">
-                <span class="br-media__title">A Quiet Place Part II</span> (2021)
-              </a>
-            </div>
-
-            <div class="br-media__bottom">
-              <div class="br-media__price">$91.72</div>
-              <a href="#" class="br-btn br-media__cta">Buy</a>
-            </div>
-          </div>
-
-        </div><!-- end media grid -->
-
-      </div>
-
     </div>
 
   </main>
 
-  <style>.br-footer-extra {
-      display: none;
-    }</style>
+  <a href="#main" class="br-top | active">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.0002 7.828V20H11.0002V7.828L5.63617 13.192L4.22217 11.778L12.0002 4L19.7782 11.778L18.3642 13.192L13.0002 7.828Z" fill="white"></path>
+    </svg>
+    <span class="visually-hidden">Go to top</span>
+  </a>
 
   <footer class="br-footer py-5">
 
@@ -599,5 +760,10 @@
 </footer>
 
 </body>
+
+<style>.br-footer-extra {
+    display: none;
+  }</style>
+
 
 </html>
