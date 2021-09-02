@@ -41,3 +41,13 @@
   font-weight: bold;
   color: #2b94d2;
 }
+
+.br-auth-card__forgot {
+  color: #f74b15;
+  font-size: rem(12px);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

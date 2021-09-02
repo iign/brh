@@ -12649,4 +12649,13 @@ summary::-webkit-details-marker {
   color: #2b94d2;
 }
 
+.br-auth-card__forgot {
+  color: #f74b15;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.br-auth-card__forgot:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=/main.07544d9b.css.map */
