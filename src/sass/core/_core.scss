@@ -154,6 +154,10 @@ ul {
   }
 }
 
+.br-col-layout__main {
+  flex-grow: 1;
+}
+
 .br-col-layout.inverted-on-desktop {
   .br-col-layout__sidebar {
     margin-right: 20px;
