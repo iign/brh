@@ -6,7 +6,7 @@
   color: #0c2a3c;
   font-weight: 800;
   text-align: center;
-  padding: 6px 22px;
+  padding: 8px 22px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -33,6 +33,20 @@
     color: #afafaf;
     outline: 0;
     box-shadow: 0;
+  }
+
+  &--simple {
+    background-color: white;
+    padding: 8px 22px;
+
+    &:hover {
+      background-color: white;
+      opacity: 0.9;
+    }
+
+    &:active {
+      background-color: white;
+    }
   }
 }
 

@@ -1,0 +1,43 @@
+// Login and register components
+
+.br-auth-card {
+  background-color: #d5eaf6;
+  color: #0c2a3c;
+  padding: 15px;
+  border-radius: 5px;
+
+  @media (min-width: 992px) {
+    padding: 30px;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 3px solid #99c6db;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.br-auth-card__title {
+  font-size: rem(28px);
+  font-weight: bold;
+}
+
+.br-auth-card__btn-wide {
+  width: 100%;
+
+  @media (min-width: 992px) {
+    width: auto;
+  }
+}
+
+.br-auth-card__btn-oauth {
+  width: 100%;
+}
+
+.br-auth-card__login {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b94d2;
+}

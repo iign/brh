@@ -29,6 +29,10 @@
   color: white;
 }
 
+.br-bg-dark {
+  background-color: var(--color-four);
+}
+
 // Default focus
 
 @mixin focus-btn {

@@ -10158,6 +10158,10 @@ object {
   color: white;
 }
 
+.br-bg-dark {
+  background-color: var(--color-four);
+}
+
 .br-color-two {
   color: var(--color-two);
 }
@@ -10305,6 +10309,7 @@ ul {
 
 .br-col-layout.inverted-on-desktop .br-col-layout__sidebar {
   margin-right: 20px;
+  margin-left: 0;
 }
 .br-col-layout.inverted-on-desktop .br-col-layout__main {
   flex-grow: 1;
@@ -10393,6 +10398,14 @@ ul {
 .br-prose a {
   text-decoration: none;
   color: #2b94d2;
+}
+
+.br-separator {
+  border: none;
+  border-bottom: 5px solid #0e3f5c;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .br-header {
@@ -10849,7 +10862,6 @@ ul {
 
 .br-hero-home {
   width: 100%;
-  margin-top: 15px;
   border-radius: 5px;
   position: relative;
   padding: 15px;
@@ -10945,7 +10957,7 @@ ul {
   color: #0c2a3c;
   font-weight: 800;
   text-align: center;
-  padding: 6px 22px;
+  padding: 8px 22px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -10969,6 +10981,17 @@ ul {
   color: #afafaf;
   outline: 0;
   box-shadow: 0;
+}
+.br-btn--simple {
+  background-color: white;
+  padding: 8px 22px;
+}
+.br-btn--simple:hover {
+  background-color: white;
+  opacity: 0.9;
+}
+.br-btn--simple:active {
+  background-color: white;
 }
 
 .br-btn-action {
@@ -12581,6 +12604,49 @@ summary::-webkit-details-marker {
     font-size: 2.25rem;
     padding-left: 20px;
   }
+}
+
+.br-auth-card {
+  background-color: #d5eaf6;
+  color: #0c2a3c;
+  padding: 15px;
+  border-radius: 5px;
+}
+@media (min-width: 992px) {
+  .br-auth-card {
+    padding: 30px;
+  }
+}
+.br-auth-card hr {
+  border: none;
+  border-bottom: 3px solid #99c6db;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.br-auth-card__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.br-auth-card__btn-wide {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .br-auth-card__btn-wide {
+    width: auto;
+  }
+}
+
+.br-auth-card__btn-oauth {
+  width: 100%;
+}
+
+.br-auth-card__login {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2b94d2;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

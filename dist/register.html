@@ -12,7 +12,7 @@
   <script defer="" src="https://unpkg.com/alpinejs@3.1.0/dist/cdn.min.js"></script>
   <script src="/main.fb6bbcaf.js"></script>
   <title>BlueRay Hunt</title>
-<script src="/404.js"></script></head>
+</head>
 
 <body>
   <header>
@@ -144,130 +144,73 @@
   </div>
 </header>
 
-  <main id="main">
-
+  <main id="main" class="br-bg-dark">
     <div class="container">
-      <div class="br-col-layout br-col-layout--inverted">
-        <article class="br-col-layout__main br-article-block | br-flow br-prose | mt-3">
-          <h1>Privacy Policy</h1>
-          <p>
-            <strong>BLURAYHUNT</strong> is committed to protecting our customer's privacy. Please take the time to
-            review this notice which explains
-            what information we collect about you, how we use it, and your rights.
-          </p>
-          <h2>What personal data do we collect about you?</h2>
-          <p>
-            We collect personal data from you when you provide it to us directly and through your use of the Site. This
-            information
-            may include:
-          </p>
-          <ul>
-            <li>Information you provide to us when you use our Site (e.g. your name, contact details, gender, product
-              reviews, and any
-              information which you add to your account profile);
-            </li>
-            <li>Transaction and billing information, if you make any purchases from us or using our Site (e.g.
-              credit/debit card details
-              and delivery information);
-            </li>
-            <li>Records of your interactions with us (e.g. if you contact our customer service team, interact with us on
-              social media);
-            </li>
-            <li>Information you provide us when you enter a competition or participate in a survey;
-            </li>
-            <li>Information collected automatically, using cookies and other tracking technologies (e.g. which pages you
-              viewed and
-              whether you clicked on a link in one of our email updates). We may also collect information about the
-              device you use to
-              access our Site; and
-            </li><li>Other information necessary to provide the Site, for example we may access your location if you give us
-              your consent.
-            </li>
-          </ul>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-5">
+          <div class="br-auth-card my-4 my-lg-5">
+            <h1 class="br-auth-card__title">Register</h1>
 
-          <p>
-            If you also shop in one of our stores, we may combine information you give us in-store (e.g. if you make a
-            purchase or
-            join our mailing list in-store) with the information above.
-          </p>
+            <form action="/" class="br-auth-card__form mt-3">
+              <div>
+                <label for="register-name" class="visually-hidden">Name</label>
+                <input type="text" class="br-input w-100" placeholder="Name">
+              </div>
+              <div class="mt-2">
+                <label for="register-email" class="visually-hidden">Email</label>
+                <input type="email" class="br-input w-100" placeholder="Email">
+              </div>
+              <div class="mt-2">
+                <label for="register-password" class="visually-hidden">Password</label>
+                <input type="password" class="br-input w-100" placeholder="Password">
+              </div>
+              <div class="mt-3 d-flex justify-content-end">
+                <button class="br-btn br-auth-card__btn-wide">Create account</button>
+              </div>
 
-          <h3>What do we use this personal data for?</h3>
+              <hr class="mt-3">
 
-          <p>
-            Depending on how you use our Site, your interactions with us, and the permissions you give us, the purposes
-            for which we
-            use your personal data include:
-          </p>
+              <div class="mt-3">
+                <strong>Or, continue with</strong>
+              </div>
 
-          <h4>Marketing</h4>
+              <div class="d-flex align-items-center mt-2">
+                <button class="br-btn br-btn--simple br-auth-card__btn-oauth me-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.27317 7.99772C3.27317 7.48856 3.34591 6.9794 3.52776 6.5066L0.836478 4.43359C0.290949 5.52465 0 6.72482 0 7.99772C0 9.27062 0.290949 10.4708 0.836478 11.5255L3.52776 9.45246C3.34591 9.01604 3.27317 8.50688 3.27317 7.99772Z" fill="#FBBC05"></path>
+                    <path d="M0.835938 4.47334L3.52721 6.54635C4.14548 4.61881 5.89117 3.27317 8.00055 3.27317C9.12798 3.27317 10.1463 3.67323 10.9464 4.32786L13.274 2.00027C11.8556 0.763741 10.0372 0 8.00055 0C4.83648 0 2.10884 1.81843 0.835938 4.47334Z" fill="#EA4335"></path>
+                    <path d="M8.00055 6.54297V9.6343H12.2921C11.892 11.5982 10.219 12.7256 8.00055 12.7256C5.89117 12.7256 4.14548 11.38 3.52721 9.48883L0.835938 11.5618C2.10884 14.1804 4.83648 15.9988 8.00055 15.9988C12.0011 15.9988 15.638 13.0893 15.638 7.99771C15.638 7.52492 15.5652 7.01576 15.4561 6.54297H8.00055Z" fill="#34A853"></path>
+                    <path d="M8 6.54297V9.6343H12.2915C12.0733 10.689 11.4914 11.4891 10.6549 12.0346L13.2007 13.9985C14.6555 12.6165 15.6374 10.6163 15.6374 7.99771C15.6374 7.52492 15.5647 7.01576 15.4556 6.54297H8Z" fill="#4285F4"></path>
+                  </svg>
+                  <span class="ms-2">Google</span>
+                </button>
+                <button class="br-btn br-btn--simple br-auth-card__btn-oauth ms-1">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.1168 16C15.6045 16 15.9999 15.6046 15.9999 15.117V0.883103C15.9999 0.395301 15.6045 0 15.1168 0H0.883044C0.395241 0 0 0.395301 0 0.883103V15.117C0 15.6046 0.395241 16 0.883044 16H15.1168Z" fill="#3B5998"></path>
+                    <path d="M11.0366 16V9.80401H13.1164L13.4278 7.38927H11.0366V5.84757C11.0366 5.14845 11.2308 4.67204 12.2333 4.67204L13.512 4.67144V2.51173C13.2908 2.48236 12.5318 2.41659 11.6488 2.41659C9.80518 2.41659 8.54308 3.54189 8.54308 5.6085V7.38927H6.45801V9.80401H8.54308V16H11.0366Z" fill="white"></path>
+                  </svg>
 
-          <p>
-            We love to communicate with our customers and so, depending on your marketing preferences, we may use your
-            personal data
-            to send you marketing messages by email, phone or post. Some of these messages may be tailored to you, based
-            on your
-            previous browsing or purchase activity, and other information we hold about you.
-          </p>
+                  <span class="ms-2">Facebook</span>
+                </button>
+              </div>
 
-          <p>
-            If you no longer want to receive marketing communications from us (or would like to opt back in!), you can
-            change your
-            preferences at any time by contacting us (details below), clicking on the ‘unsubscribe’ link in any email,
-            or updating
-            your settings in your account. If you unsubscribe from marketing, please note we may still contact you with
-            service
-            messages from time to time (e.g. order and delivery confirmations, and information about your legal rights).
-          </p>
+              <div class="mt-3 mt-lg-4">
+                Already have an account? <a href="#" class="br-auth-card__login">Log in</a>
+              </div>
 
-          <h4>Contact Us</h4>
 
-          <p>If you have any queries on any aspect of our Privacy Policy, please contact us on the details below:</p>
 
-          <p>Email: <a href="mailto:customer.experience@blurayhunt.com">customer.experience@blurayhunt.com</a></p>
-
-          <p>Address: Customer Services, Meridian House, Gadbrook Park, Cheshire, CW9 7RA</p>
-
-          <p>
-            <small>Last updated - 16/05/2018</small>
-          </p>
-
-        </article>
-        <aside class="br-col-layout__sidebar mb-5">
-          <div class="br-sidebar__widget mt-5">
-            <h3 class="br-sidebar__title">Information</h3>
-
-            <ul class="br-sidebar-menu">
-              <li>
-                <a href="#" class="br-sidebar-menu__item active">FAQs</a>
-              </li>
-              <li>
-                <a href="#" class="br-sidebar-menu__item">Contact Us</a>
-              </li>
-              <li>
-                <a href="#" class="br-sidebar-menu__item">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" class="br-sidebar-menu__item">Policies &amp; Procedures</a>
-              </li>
-              <li>
-                <a href="#" class="br-sidebar-menu__item">Terms of Use</a>
-              </li>
-            </ul>
-
+            </form>
           </div>
-
-        </aside>
+        </div>
       </div>
+      <hr class="br-separator">
     </div>
-
   </main>
 
-  <a href="#main" class="br-top | active">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13.0002 7.828V20H11.0002V7.828L5.63617 13.192L4.22217 11.778L12.0002 4L19.7782 11.778L18.3642 13.192L13.0002 7.828Z" fill="white"></path>
-    </svg>
-    <span class="visually-hidden">Go to top</span>
-  </a>
+  <style>.br-footer-extra {
+      display: none;
+    }</style>
 
   <footer class="br-footer py-5">
 

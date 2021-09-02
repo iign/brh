@@ -157,6 +157,7 @@ ul {
 .br-col-layout.inverted-on-desktop {
   .br-col-layout__sidebar {
     margin-right: 20px;
+    margin-left: 0;
   }
 
   .br-col-layout__main {
@@ -230,6 +231,7 @@ ul {
     font-weight: bold;
     font-size: rem(17px);
     line-height: 1.2;
+
     @media (min-width: 992px) {
       font-size: rem(18px);
     }
@@ -245,4 +247,12 @@ ul {
     text-decoration: none;
     color: #2b94d2;
   }
+}
+
+.br-separator {
+  border: none;
+  border-bottom: 5px solid #0e3f5c;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
