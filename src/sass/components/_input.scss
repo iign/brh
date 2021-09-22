@@ -58,6 +58,10 @@
   background-repeat: no-repeat;
   background-color: #0c2a3c;
   cursor: pointer;
+
+  &--lightblue {
+    background-color: #2b94d2;
+  }
 }
 
 .br-select-light {
