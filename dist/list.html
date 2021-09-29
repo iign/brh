@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/main.07544d9b.css">
   <script defer="" src="https://unpkg.com/alpinejs@3.1.0/dist/cdn.min.js"></script>
   <script src="/main.fb6bbcaf.js"></script>
-  <title>BlueRay Hunt</title>
+  <title>BlueRay Hunt · Comedy</title>
 </head>
 
 <body>
@@ -147,11 +147,42 @@
   <main>
 
     <div class="container my-5">
-      <h2 class="br-section-title br-home-deals-title mb-3">
-        <span>Blu-ray</span>
-      </h2>
 
-      <div class="br-col-layout inverted-on-desktop">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="br-section-title br-home-deals-title mb-3">
+          <span>Comedy</span>
+        </h1>
+
+        <div class="d-flex justify-content-end d-none d-md-flex">
+          <div class="d-flex align-items-center">
+            <label for="" class="br-label-sm me-1">Format</label>
+            <select name="" id="" class="me-3 br-select-light">
+              <option value="">Stuff</option>
+            </select>
+            <label for="" class="br-label-sm me-1">Sort by</label>
+            <select name="" id="" class="br-select-light">
+              <option value="" selected="">Price: Low to high</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between mt-3 d-md-none">
+        <select name="select-format" id="select-format" class="br-select w-100 me-1">
+          <option value="" selected="" disabled="">Format</option>
+          <option value="Bluray">Bluray</option>
+          <option value="DVD">DVD</option>
+          <option value="DVD 4K">DVD 4K</option>
+        </select>
+        <select name="select-format" id="select-format" class="br-select w-100 ms-1">
+          <option value="" selected="" disabled="">Sort by</option>
+          <option value="">Newest first</option>
+        </select>
+      </div>
+
+
+
+      <div class="br-col-layout inverted-on-desktop mt-2">
         <section class="br-col-layout__main">
           <div class="br-media-grid">
             <div class="br-media">
@@ -489,7 +520,27 @@
 
         <aside class="br-col-layout__sidebar">
 
-          <div class="br-drawer (active)" id="br-drawer">
+          <div class="mb-3">
+            <div class="br-filter-pills-list">
+              <div class="br-filter-pill">
+                <button></button>
+                Blu-ray
+              </div>
+              <div class="br-filter-pill">
+                <button></button>
+                Now available
+              </div>
+              <div class="br-filter-pill">
+                <button></button>
+                New
+              </div>
+            </div>
+
+            <button class="br-filter-pills-clear">Clear all filters</button>
+          </div>
+
+          <div class="br-drawer active" id="br-drawer">
+
             <div class="br-drawer__header">
               <div class="br-drawer__inner">
                 <span class="br-drawer__title">Filters</span>
@@ -505,6 +556,28 @@
             <div class="br-drawer__content">
 
               <div class="br-drawer-widget">
+
+                <!-- Filter pills -->
+                <div class="mb-3 br-filter-pills d-lg-none">
+                  <div class="br-filter-pills-list">
+                    <div class="br-filter-pill">
+                      <button></button>
+                      Blu-ray
+                    </div>
+                    <div class="br-filter-pill">
+                      <button></button>
+                      Now available
+                    </div>
+                    <div class="br-filter-pill">
+                      <button></button>
+                      New
+                    </div>
+                  </div>
+
+                  <button class="br-filter-pills-clear">Clear all filters</button>
+                </div>
+                <!-- /Filter pills -->
+
                 <div class="br-drawer-widget__title">
                   Formats
                 </div>
@@ -554,7 +627,7 @@
                       <input class="br-input-muted w-100" type="number" name="" id="" placeholder="Max" size="4">
                     </div>
                   </div>
-                  <button class="br-btn-action w-100 mt-2">Apply</button>
+                  <button class="br-btn-action w-100 mt-2">Update</button>
                 </div>
               </div>
 
